@@ -38,8 +38,20 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'pry-rails', '~> 0.3.6'
+end
+
+group :test do
+  gem 'database_cleaner', '~> 1.6', '>= 1.6.2'
+  gem 'factory_bot_rails', '~> 4.8', '>= 4.8.2'
+  gem 'faker', '~> 1.8', '>= 1.8.7'
+  gem 'rspec-rails', '~> 3.7', '>= 3.7.2'
+  gem 'shoulda-matchers', '~> 3.1', '>= 3.1.2'
+  gem 'rspec-graphql_matchers'
 end
 
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'graphql', '~> 1.7', '>= 1.7.14'
+
